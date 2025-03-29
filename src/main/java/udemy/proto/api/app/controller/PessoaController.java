@@ -43,7 +43,7 @@ public class PessoaController {
 			@ApiResponse(responseCode = "404", description = "Pagina não encontrado", content = @Content),
 			@ApiResponse(responseCode = "500", description = "Interno sem causa mapeada.", content = @Content),
 			@ApiResponse(responseCode = "504", description = "Gateway Time-Out", content = @Content) })
-	@GetMapping(value = "id/{idCliente}", produces = { "application/json", "application/xml" })
+	@GetMapping()
 	public ResponseEntity<PessoaDTO> pessoa() {
 
 		return ResponseEntity.status(HttpStatus.OK).body(pessoaService.pessoa());
