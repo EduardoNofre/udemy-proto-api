@@ -16,7 +16,7 @@ WORKDIR /udemy-app
 ## COMANDO MAVEN
 RUN mvn clean install
 
-## DIRETORIO JAVA
+## DIRETORIO JAVA 
 FROM openjdk:22-ea-16-oracle
 
 ## PEGA O build  DA APLICAÇÃO E FAZ UMA COPIA PARA /udemy-app/udemy-proto-api-0.0.1.jar
