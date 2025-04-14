@@ -58,7 +58,7 @@ public class PessoaController {
 
 	@Operation(summary = "Cria uma lista pessoas ", description = "Criar lista de pessoas de tamanho 10")
 	@ApiResponses(value = { @ApiResponse(responseCode = "201", description = "criado", content = {
-			@Content(mediaType = "application/json", array = @ArraySchema(schema = @Schema(implementation = Integer.class))) }),
+			@Content(mediaType = "application/json", schema = @Schema(implementation = Integer.class)) }),
 			@ApiResponse(responseCode = "204", description = "Sem conteudo", content = @Content),
 			@ApiResponse(responseCode = "400", description = "Erro processar a requisição", content = @Content),
 			@ApiResponse(responseCode = "401", description = "Não autorizado", content = @Content),
